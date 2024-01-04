@@ -30,11 +30,5 @@ public class ConstructorChainingDemo {
         System.out.println("Object 1:");
         obj1.displayValues();
 
-        // Create an instance using the parameterized constructor
-        ConstructorChainingDemo obj2 = new ConstructorChainingDemo(20, 30);
-
-        // Display values
-        System.out.println("\nObject 2:");
-        obj2.displayValues();
     }
 }

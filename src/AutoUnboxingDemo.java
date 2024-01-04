@@ -7,13 +7,9 @@ public class AutoUnboxingDemo {
         // Autoboxing: Converting double to Double
         Double wrappedDouble = 3.14;
 
-        // Autoboxing: Converting char to Character
-        Character wrappedChar = 'A';
 
-        // Display the values
         System.out.println("Wrapped Integer: " + wrappedInt);
         System.out.println("Wrapped Double: " + wrappedDouble);
-        System.out.println("Wrapped Character: " + wrappedChar);
 
         // Auto-unboxing: Converting Integer to int
         int unboxedInt = wrappedInt;  // Auto-unboxing
@@ -21,12 +17,9 @@ public class AutoUnboxingDemo {
         // Auto-unboxing: Converting Double to double
         double unboxedDouble = wrappedDouble;  // Auto-unboxing
 
-        // Auto-unboxing: Converting Character to char
-        char unboxedChar = wrappedChar;  // Auto-unboxing
 
         // Display the unboxed values
         System.out.println("\nUnboxed int: " + unboxedInt);
         System.out.println("Unboxed double: " + unboxedDouble);
-        System.out.println("Unboxed char: " + unboxedChar);
     }
 }

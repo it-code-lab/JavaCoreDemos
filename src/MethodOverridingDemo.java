@@ -35,7 +35,5 @@ public class MethodOverridingDemo {
         // Call the overridden makeSound method of the subclass
         myDog.makeSound();  // Output: Woof! Woof!
 
-        // Call the new method specific to the Dog class
-        myDog.barkTwice();  // Output: Bark! Bark!
     }
 }

@@ -30,7 +30,7 @@ public class FinalMethodDemo {
         // Creating an instance of the subclass
         SubClass subInstance = new SubClass();
 
-        // Uncommenting the following line will result in a compilation error
-        // subInstance.displayMessage();
+        // Calling the final method from the subclass
+        subInstance.displayMessage();
     }
 }

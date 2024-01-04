@@ -17,6 +17,6 @@ public class LocalVariableDemo {
         } // The 'anotherVar' variable is not accessible outside the block
 
         // Attempting to access 'anotherVar' outside the block will result in a compilation error
-        // System.out.println("Trying to access anotherVar outside the block: " + anotherVar);
+        //System.out.println("Trying to access anotherVar outside the block: " + anotherVar);
     }
 }
