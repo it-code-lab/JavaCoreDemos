@@ -25,18 +25,18 @@ class Person {
 
 public class ComparatorExample {
     public static void main(String[] args) {
-        List<partthree.Person> people = new ArrayList<>();
-        people.add(new partthree.Person("Alice", 30));
-        people.add(new partthree.Person("Bob", 25));
-        people.add(new partthree.Person("Charlie", 35));
+        List<Person> people = new ArrayList<>();
+        people.add(new Person("Alice", 30));
+        people.add(new Person("Bob", 25));
+        people.add(new Person("Charlie", 35));
 
         // Create a custom comparator to sort people by age in ascending order
-        Comparator<partthree.Person> ageComparator = (p1, p2) -> p1.getAge() - p2.getAge();
+        Comparator<Person> ageComparator = (p1, p2) -> p1.getAge() - p2.getAge();
 
         // Use the custom comparator to sort the list
         Collections.sort(people, ageComparator);
 
-        for (partthree.Person person : people) {
+        for (Person person : people) {
             System.out.println(person.getName() + " - " + person.getAge());
         }
     }
