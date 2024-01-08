@@ -21,7 +21,11 @@ public class HashCodeDemo {
         return result;
     }
 
-    // Other methods...
+    @Override
+    public boolean equals(Object obj) {
+        HashCodeDemo hashCodeDemo = (HashCodeDemo) obj;
+        return (this.value == hashCodeDemo.value) && (this.name.equals(hashCodeDemo.name));
+    }
 
     public static void main(String[] args) {
         HashCodeDemo obj1 = new HashCodeDemo(42, "Example");

@@ -5,6 +5,7 @@ public class StringBuilderDemo {
     public static void main(String[] args) {
         // Creating a StringBuilder
         StringBuilder stringBuilder = new StringBuilder("Hello");
+        System.out.println("memory reference: " + System.identityHashCode(stringBuilder));
         System.out.println("StringBuilder after creation: " + stringBuilder);
 
         // Appending additional characters
@@ -26,6 +27,7 @@ public class StringBuilderDemo {
         // Getting the length of the StringBuilder
         int length = stringBuilder.length();
         System.out.println("Length of StringBuilder: " + length);
+        System.out.println("memory reference: " + System.identityHashCode(stringBuilder));
 
     }
 }

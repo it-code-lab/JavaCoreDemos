@@ -5,7 +5,9 @@ public class StringBufferDemo {
     public static void main(String[] args) {
         // Creating a StringBuffer
         StringBuffer stringBuffer = new StringBuffer("Hello");
+        System.out.println("memory reference: " + System.identityHashCode(stringBuffer));
         System.out.println("StringBuffer after creation: " + stringBuffer);
+
 
         // Appending additional characters
         stringBuffer.append(" World");
@@ -27,6 +29,7 @@ public class StringBufferDemo {
         // Getting the length of the StringBuffer
         int length = stringBuffer.length();
         System.out.println("Length of StringBuffer: " + length);
+        System.out.println("memory reference: " + System.identityHashCode(stringBuffer));
 
     }
 }
